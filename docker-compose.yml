@@ -2,9 +2,19 @@
 version: '3.3'
 services:
   dev:
-    build: .
+    image: hapana/blog
     volumes:
       - ./site:/site
     ports:
       - "1313:1313"
     user: ${CURRENT_UID}
+  generate:
+    image: hapana/blog
+    volumes:
+      - ./site:/site
+      - ./public:/site/public
+    user: ${CURRENT_UID}
+    command:
+      - "hugo"
+      - "-t"
+      - "hyde"
