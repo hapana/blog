@@ -1,0 +1,18 @@
+---
+tasks:
+  dev:
+    usage: Start dev
+    run:
+      - docker-compose build
+      - CURRENT_UID=$(id -u):$(id -g) docker-compose up dev
+
+  generate:
+    usage: Generate static content
+    run:
+      - docker-compose build
+      - CURRENT_UID=$(id -u):$(id -g) docker-compose up generate
+
+  exec:
+    usage: Jump into the docker env
+    run:
+      - docker exec --user $(id -u):$(id -g) -it blog_dev_1 /bin/ash
