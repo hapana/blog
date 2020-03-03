@@ -1,7 +1,7 @@
 ---
 theme: "hyde"
 
-baseURL: "http://example.org/"
+baseURL: "https://hapana.github.io/"
 languageCode: "en-us"
 title: "Harry P"
 
