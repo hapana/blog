@@ -16,7 +16,7 @@ tasks:
     run:
       - docker exec --user $(id -u):$(id -g) -it blog_dev_1 /bin/ash
 
-  generate:
+  deploy:
     usage: Generate static content
     run:
       - task: build
