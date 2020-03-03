@@ -1,0 +1,10 @@
+---
+version: '3.3'
+services:
+  dev:
+    build: .
+    volumes:
+      - ./site:/site
+    ports:
+      - "1313:1313"
+    user: ${CURRENT_UID}
