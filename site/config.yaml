@@ -1,0 +1,16 @@
+---
+theme: "hyde"
+
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "Harry P"
+
+Menus:
+  main:
+    - Name: "Github"
+      URL: "https://github.com/hapana/"
+    - Name: "LinkedIn"
+      URL: "https://www.linkedin.com/in/harrypan/"
+
+params:
+  description: "Posts and stuff"
