@@ -21,6 +21,4 @@ tasks:
     run:
       - task: build
       - CURRENT_UID=$(id -u):$(id -g) docker-compose up generate
-      - cd public
-      - git commit -am "$(date) - Deploy blog"
-      - git push origin master
+      - ./scripts/deploy.sh
