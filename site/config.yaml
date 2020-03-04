@@ -3,21 +3,30 @@ theme: "hugo-tranquilpeak-theme"
 
 baseURL: "https://hapana.github.io/"
 languageCode: "en-us"
-title: "'Articles"
+title: "Articles"
 
 author:
   name: "Harry P"
-  bio: "Okayish person"
-  job: "DevOops"
+  bio: "Ethical Technologist (I think that's a thing)"
+  job: "Senior DevOops Engineer"
   picture: "/avatar.jpeg"
+  location: 'London'
+
+taxonomies:
+  tag: "tags"
 
 menu:
   main:
     - identifier: "articles"
-      name: "Articles"
-      title: "Blog"
-      url: "/posts/"
+      name: "Home"
+      pre: "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+      url: "/"
       weight: 1
+    - identifier: "tags"
+      name: "Tags"
+      pre: "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+      url: "/tags"
+      weight: 2
   links:
     - identifier: "github"
       name: "GitHub"
@@ -29,10 +38,18 @@ menu:
       pre: "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
       url: "https://www.linkedin.com/in/harrypan/"
       weight: 1
+  misc:
+    - identifier: "rss"
+      name: "RSS"
+      pre: "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+      url: "/index.xml"
+      weight: 1
 
 params:
+  dateFormat: "2 January 2006"
   coverImage: "images/cover.jpg"
   sidebarBehavior: 1
   autoThumbnailImage: true
   description: "Stuff I do"
   thumbnailImage: true
+  thumbnailImagePosition: "left"

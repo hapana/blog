@@ -1,6 +1,11 @@
 ---
 title: "My Mac Setup"
 date: 2020-03-03T19:46:59Z
+coverImage: /my-mac-touchbar.jpeg
+tags:
+- developer environment
+- mac
+- shell
 ---
 
 # Intro
