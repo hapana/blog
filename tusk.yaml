@@ -18,7 +18,10 @@ tasks:
 
   deploy:
     usage: Generate static content
+    options:
+      msg:
+        default: "Minor changes"
     run:
       - task: build
       - CURRENT_UID=$(id -u):$(id -g) docker-compose up generate
-      - ./scripts/deploy.sh
+      - ./scripts/deploy.sh ${msg}
