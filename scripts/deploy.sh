@@ -8,6 +8,9 @@ log() {
   printf "\033[0;32m$(date) - $1...\033[0m\n"
 }
 
+# Comes from tusk, manage defaults there too so no need to do it here
+MSG=$1
+
 log "Staging Github Pages static content"
 
 cd public
@@ -15,7 +18,7 @@ git add .
 
 log "Comitting Github Pages content"
 
-git commit -m "$(date) - Pushing to Github Pages"
+git commit -m "$(date) - $MSG"
 git push origin master
 
 log "Pushed to Github Pages"

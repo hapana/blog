@@ -1,16 +1,38 @@
 ---
-theme: "hyde"
+theme: "hugo-tranquilpeak-theme"
 
 baseURL: "https://hapana.github.io/"
 languageCode: "en-us"
-title: "Harry P"
+title: "'Articles"
 
-Menus:
+author:
+  name: "Harry P"
+  bio: "Okayish person"
+  job: "DevOops"
+  picture: "/avatar.jpeg"
+
+menu:
   main:
-    - Name: "Github"
-      URL: "https://github.com/hapana/"
-    - Name: "LinkedIn"
-      URL: "https://www.linkedin.com/in/harrypan/"
+    - identifier: "articles"
+      name: "Articles"
+      title: "Blog"
+      url: "/posts/"
+      weight: 1
+  links:
+    - identifier: "github"
+      name: "GitHub"
+      pre: "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+      url: "https://github.com/hapana/"
+      weight: 1
+    - identifier: "linkedin"
+      name: "LinkedIn"
+      pre: "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
+      url: "https://www.linkedin.com/in/harrypan/"
+      weight: 1
 
 params:
-  description: "Posts and stuff"
+  coverImage: "images/cover.jpg"
+  sidebarBehavior: 1
+  autoThumbnailImage: true
+  description: "Stuff I do"
+  thumbnailImage: true
