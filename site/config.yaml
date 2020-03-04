@@ -46,7 +46,7 @@ menu:
       weight: 1
 
 params:
-  dateFormat: "2 January 2006"
+  dateFormat: "02 Jan 2006"
   coverImage: "images/cover.jpg"
   sidebarBehavior: 1
   autoThumbnailImage: true
