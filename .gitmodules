@@ -5,3 +5,6 @@
 	path = public
 	url = git@github.com:hapana/hapana.github.io.git
 	branch = master
+[submodule "site/themes/m10c"]
+	path = site/themes/m10c
+	url = https://github.com/vaga/hugo-theme-m10c.git
